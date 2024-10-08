@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://embed.typeform.com/embed.js"></script>
     <title>EmpowerED || Contact Us</title>
 </head>
 <body>
@@ -52,8 +53,18 @@
     </div>
 
     <div class="form-button-container">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZVxpXUZmEwrYH-_4LSmcjdPhNY-4oyZOA2m0A3Cc83DLaZQ/viewform" class="form-button" target="_blank">Join Our Initiative</a>
+        <button class="form-button" onclick="openPopup()">Join Our Initiative</button>
     </div>
+    
+    <script>
+      function openPopup() {
+        window.typeformEmbed.makePopup('https://jrdfmez94ja.typeform.com/to/KXPIHFFa', {
+          mode: 'popup',
+          hideHeaders: true,
+          hideFooter: true,
+        }).open();
+      }
+    </script>
 
     </section>
 
