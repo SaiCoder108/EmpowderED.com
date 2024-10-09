@@ -218,6 +218,13 @@ footer {
     border-radius: 10px; /* Optional: round the corners of the image */
 }
 
+.header-right img {
+    width: 100px; /* Adjust this size as needed */
+    height: auto; /* Keeps the aspect ratio */
+    max-width: 100%; /* Ensures the logo doesn’t overflow the container */
+    object-fit: contain; /* Makes sure the logo fits well */
+}
+
 .team-section {
     display: flex; /* Use Flexbox to align items side by side */
     justify-content: center; /* Center the items horizontally */
@@ -312,4 +319,99 @@ footer {
 
 .project-panel:hover .panel-title {
     background-color: #fbff0000; /* Change color when hovered */
+}
+
+/* Styles for medium-sized screens (tablets) */
+@media (max-width: 1200px) {
+
+    header h1 {
+        font-size: 5vw; /* Responsive font size based on viewport width */
+    }
+    
+    .container {
+        width: 95%; /* Reduces the width slightly for medium screens */
+    }
+
+    nav {
+        flex-direction: row; /* Keep items horizontal on medium screens */
+        justify-content: space-around; /* Center the links without extra space */
+    }
+
+    nav a {
+        padding: 10px; /* Adjust padding for medium screens */
+        font-size: 2.5vw; /* Responsive font size for medium screens */
+    }
+
+    section {
+        padding: 5%; /* Adds padding as a percentage */
+    }
+
+    .team-member {
+        max-width: 80%; /* Reduces max-width for team members */
+    }
+}
+
+/* Styles for smaller screens (mobile) */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 5%; /* Padding for smaller screens */
+    }
+
+    header h1 {
+        font-size: 6vw; /* Larger font size for better visibility */
+    }
+
+    /* Mobile styles for the navigation bar */
+    .navbar {
+        display: block; /* Ensures items are stacked in a block */
+        text-align: left; /* Aligns the text to the left */
+        padding: 0; /* Removes any padding */
+        margin: 0; /* Removes any margin */
+        width: 100%; /* Full width for the container */
+    }
+
+    .navbar a {
+        display: block; /* Ensures each link takes a full row */
+        width: 100%; /* Full width for each link */
+        padding: 10px 0; /* Add padding between links */
+        text-align: left; /* Aligns text inside each link */
+        font-size: 5vw; /* Responsive font size */
+        margin: 0; /* Removes any margins between links */
+        border-bottom: 1px solid #ffd700; /* Optional: Adds a border between items */
+    }
+
+    .navbar a:last-child {
+        border-bottom: none; /* Remove border on the last item */
+    }
+
+    .navbar a:hover {
+        background-color: #ffd700; /* Highlight effect on hover */
+    }
+
+    .slideshow-container {
+        max-width: 100%; /* Full width for slideshow on mobile */
+    }
+
+    .mySlides img {
+        height: auto; /* Ensure images maintain their aspect ratio */
+    }
+
+    section {
+        padding: 5%; /* Padding for sections on mobile */
+    }
+
+    .form-button {
+        width: 100%; /* Full width for buttons on mobile */
+        font-size: 4vw; /* Responsive font size */
+        padding: 6% 0; /* Adjust padding as a percentage */
+    }
+
+    .team-member {
+        width: 100%; /* Full width for team members on mobile */
+        max-width: none; /* Remove max-width for better fit */
+    }
+
+    .team-intro p {
+        font-size: 4vw; /* Responsive font size for team intro */
+    }
 }
