@@ -1,71 +1,78 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="styles.css">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmpowerED || Homepage</title>
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="header-content">
+        <div class="container header-content">
             <div class="header-left">
-                <h1>Welcome to EmpowerED</h1>
+                <h1>Your Website Title</h1>
                 <nav>
-                    <a href="about.html">About Us</a> |
-                    <a href="team.html">Our Team</a> |
-                    <a href="projects.html">Our Projects</a> |
-                    <a href="contact.html">Contact Us</a>
+                    <a href="#about">About</a>
+                    <a href="#team">Team</a>
+                    <a href="#contact">Contact</a>
                 </nav>
-            </div>
-            <div class="header-right">
-                <img src="logo.png" alt="Logo" style="width:100%; height:auto;">
             </div>
         </div>
     </header>
-    
-    <!-- Slideshow Container -->
+
     <div class="slideshow-container">
-        
-        <!-- Slide 1 -->
         <div class="mySlides fade">
-            <img src="schools1.jpg" style="width:100%; height:auto;">
-            <div class="text">Empowering Communities through Education</div>
+            <img src="image1.jpg" alt="Slide 1">
+            <div class="text">Caption for Slide 1</div>
         </div>
-
-        <!-- Slide 2 -->
         <div class="mySlides fade">
-            <img src="schools.jpeg" style="width:100%; height:auto;">
-            <div class="text">Collaborating with Educators to Innovate</div>
+            <img src="image2.jpg" alt="Slide 2">
+            <div class="text">Caption for Slide 2</div>
         </div>
-
-        <!-- Slide 3 -->
         <div class="mySlides fade">
-            <img src="students.jpg" style="width:100%; height:auto;">
-            <div class="text">Engaging Students in Creative Learning</div>
+            <img src="image3.jpg" alt="Slide 3">
+            <div class="text">Caption for Slide 3</div>
         </div>
-        <script src="script.js"></script>
-
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
 
-    <br>
-
-    <!-- Dots for navigation -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-
-    <div class="container"> <!-- New container div added -->    
-    <section id="team">
-        <h2><u>Welcome to EmpowerED</u></h2>
-            <p>Welcome to our homepage, please explore our site to learn more about our initiative!</p>
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="about.jpg" alt="About Image">
+            <p>We are a team dedicated to providing innovative solutions.</p>
+        </div>
     </section>
-    <footer>
 
-        <p>Copyright © 2022 EmpowerED</p>
+    <section id="team" class="container">
+        <h2>Meet the Team</h2>
+        <div class="team-section">
+            <div class="team-member">
+                <img src="team1.jpg" alt="Team Member 1" class="team-img">
+                <h3>Member 1</h3>
+                <p>Role 1</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2" class="team-img">
+                <h3>Member 2</h3>
+                <p>Role 2</p>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="Team Member 3" class="team-img">
+                <h3>Member 3</h3>
+                <p>Role 3</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Your Company Name. All rights reserved.</p>
     </footer>
-    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
